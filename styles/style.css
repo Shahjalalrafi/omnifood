@@ -1,91 +1,3 @@
-/******************/
-    /* default */
-/******************/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Rubik', sans-serif;
-    font-size: 62.5%;
-    line-height: 1;
-}
-
-/******************/
-    /* Reusable */
-/******************/
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 32px;
-}
-
-.grid {
-    display: grid;
-    row-gap: 96px;
-    column-gap: 32px;
-}
-
-.grid--cols-2 {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--cols-3 {
-    grid-template-columns: repeat(3, 1fr);
-}
-.grid--cols-4 {
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.grid--align-v {
-    align-items: center;
-}
-
-
-.m-right {
-    margin-right: 12px;
-}
-
-.btn:link, .btn:visited {
-    text-decoration: none;
-    display: inline-block;
-    color: white;
-    font-weight: 600;
-    background: #f76707;
-    font-size: 22px;
-    padding: 16px 32px;
-    border-radius: 9px;
-    transition: all .3s;
-}
-
-.btn:hover {
-    background: #e8590c;
-}
-
-.btn.btn-outline:link, .btn.btn-outline:visited {
-    background: white;
-    color: #343a40;
-}
-
-.btn.btn.btn-outline:hover {
-    box-shadow: inset 0 0 8px rgb(0 0 0 / 10%);
-}
-
-img {
-    max-width: 100%;
-}
-
-
-.heading-primary,
-.heading-secondary{
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 1.1;
-}
 
 
 /******************/
@@ -218,16 +130,6 @@ img {
 .section-how {
 }
 
-.subheading {
-    color: #e8590c;
-    font-size: 22px;
-    font-weight: 700;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 12px;
-    letter-spacing: .8;
-}
-
 .heading-secondary {
     margin-bottom: 96px;
     color: #3f260b;
@@ -292,4 +194,110 @@ img {
 
 .section-how {
     padding: 92px 0;
+}
+
+/******************/
+    /* Meals */
+/******************/
+
+.meals-section {
+    padding: 96px 0;
+}
+
+.meal {
+    box-shadow: 0 12px 24px rgba(0,0,0,.2);
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.meal-content {
+    padding: 32px;
+}
+
+.tag {
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px 22px;
+    border-radius: 100px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.tag-veg {
+    background-color: rgb(27, 146, 27);
+    color: white;
+}
+
+.tag-vegan {
+    background-color: turquoise;
+    color: white;
+}
+
+.tag-paleo {
+    background-color: palegreen;
+    color: black;
+}
+
+.meal-name {
+    font-size: 24px;
+    margin-bottom: 22px;
+}
+
+.meal-atributes {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    list-style-type: none;
+}
+
+.meal-atribute {
+    font-size: 18px;
+    display: flex;
+    gap: 12px;
+}
+
+.meal-atributes .icon {
+    color: #fcc419;
+}
+
+/* Diets */
+
+.diets .diets-geet {
+    font-size: 32px;
+    color: #3f260b;
+    margin-bottom: 22px;
+}
+
+.diets .list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+.diets .list .list-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 32px;
+}
+
+.list-icon {
+    color: #fcc419;
+}
+
+.all-recipies {
+    margin-top: 32px;
+}
+
+.link:link, .link:visited {
+    color: #e67e22;
+    display: inline-block;
+    font-size: 22px;
+    text-decoration: none;
+    border-bottom: 2px solid currentColor;
+}
+
+.link:hover {
+    border: 1px solid transparent;
 }
