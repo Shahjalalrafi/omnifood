@@ -180,11 +180,42 @@ img {
 }
 
 /******************/
+    /* featured */
+/******************/
+
+.featured {
+    padding: 96px 0 32px;
+}
+
+.heading-featured-in {
+    font-size: 22px;
+    color: #868e96;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos img {
+    height: 32px;
+    filter: brightness(0%);
+    opacity: .5;
+    transition: all .5s;
+}
+
+.logos img:hover {
+    filter: brightness(100%);
+    opacity: 1;
+}
+
+/******************/
     /* How it works */
 /******************/
 
 .section-how {
-   
 }
 
 .subheading {
