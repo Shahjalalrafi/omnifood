@@ -1,3 +1,7 @@
+/******************/
+    /* default */
+/******************/
+
 * {
     margin: 0;
     padding: 0;
@@ -10,41 +14,34 @@ body {
     line-height: 1;
 }
 
+/******************/
+    /* Reusable */
+/******************/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    gap: 32px
+}
+
+.grid--cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid--cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
 .m-right {
     margin-right: 12px;
-}
-
-img {
-    max-width: 100%;
-}
-
-.hero-section {
-    background-color: #fff4e6;
-}
-
-.hero {
-    max-width: 1250px;
-    margin: 0 auto;
-    padding: 100px 0px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px
-}
-
-.text-primary {
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 2.2rem;
-}
-
-.text-description {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 1.6;
-    margin-bottom: 2.2rem;
 }
 
 .btn:link, .btn:visited {
@@ -56,15 +53,96 @@ img {
     font-size: 22px;
     padding: 16px 32px;
     border-radius: 9px;
+    transition: all .3s;
 }
 
 .btn:hover {
     background: #e8590c;
 }
 
-.btn-outline:link, .btn-outline:visited {
+.btn.btn-outline:link, .btn.btn-outline:visited {
     background: white;
     color: #343a40;
+}
+
+.btn.btn.btn-outline:hover {
+    box-shadow: inset 0 0 8px rgb(0 0 0 / 10%);
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.heading-primary,
+.heading-secondary{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+
+/******************/
+    /* Navigation */
+/******************/
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    background-color: #fff4e6;
+}
+
+.logo {
+    height: 30px;
+    width: auto;
+}
+
+.header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    list-style-type: none;
+}
+
+.nav-link:link, .nav-link:visited {
+    text-decoration: none;
+    color: #e67e22;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer
+}
+
+
+/******************/
+    /* Hero */
+/******************/
+.hero-section {
+    background-color: #fff4e6;
+}
+
+.hero {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 100px 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px
+}
+
+.heading-primary {
+    margin-bottom: 32px;
+}
+
+.text-description {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 2.2rem;
 }
 
 .delivered-meals {
@@ -95,3 +173,29 @@ img {
     font-weight: 700;
 }
 
+/******************/
+    /* How it works */
+/******************/
+
+.subheading {
+    color: #e8590c;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 32px;
+    letter-spacing: .8;
+}
+
+.heading-secondary {
+    margin-bottom: 32px;
+    color: #3f260b;
+}
+
+.step-img {
+    width: 50%;
+}
+
+.section-how {
+    padding: 92px 0;
+}
