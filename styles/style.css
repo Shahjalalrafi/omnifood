@@ -21,11 +21,13 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 32px;
 }
 
 .grid {
     display: grid;
-    gap: 32px
+    row-gap: 96px;
+    column-gap: 32px;
 }
 
 .grid--cols-2 {
@@ -37,6 +39,10 @@ body {
 }
 .grid--cols-4 {
     grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--align-v {
+    align-items: center;
 }
 
 
@@ -177,23 +183,80 @@ img {
     /* How it works */
 /******************/
 
+.section-how {
+   
+}
+
 .subheading {
     color: #e8590c;
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 32px;
+    margin-bottom: 12px;
     letter-spacing: .8;
 }
 
 .heading-secondary {
-    margin-bottom: 32px;
+    margin-bottom: 96px;
     color: #3f260b;
 }
 
+.step-number {
+    font-size: 96px;
+    font-weight: 700;
+    color: #dee2e6;
+    margin-bottom: 12px;
+}
+.step-tertiary {
+    font-size: 44px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+    color: #3f260b
+}
+.step-description {
+    font-size: 22px;
+    line-height: 1.4;
+    color: #495057;
+}
+
+.step-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.step-img-box::before {
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: #fff4e6;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.step-img-box::after {
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: #ffe8cc;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
 .step-img {
-    width: 50%;
+    width: 35%;
 }
 
 .section-how {
