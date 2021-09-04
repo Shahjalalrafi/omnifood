@@ -30,8 +30,12 @@ body {
 
 .grid {
     display: grid;
-    row-gap: 96px;
-    column-gap: 32px;
+    /* gap: 96px; */
+    column-gap: 96px;
+}
+
+.grid:last-child {
+    margin-bottom: 3px !important;
 }
 
 .grid--cols-2 {
@@ -79,6 +83,18 @@ body {
     box-shadow: inset 0 0 8px rgb(0 0 0 / 10%);
 }
 
+.link:link, .link:visited {
+    color: #e67e22;
+    display: inline-block;
+    font-size: 22px;
+    text-decoration: none;
+    border-bottom: 2px solid currentColor;
+}
+
+.link:hover {
+    border: 1px solid transparent;
+}
+
 img {
     max-width: 100%;
 }
@@ -98,4 +114,8 @@ img {
     font-size: 50px;
     font-weight: 700;
     line-height: 1.1;
+}
+
+.margin--bottom-md {
+    margin-bottom: 32px !important;
 }

@@ -208,6 +208,12 @@
     box-shadow: 0 12px 24px rgba(0,0,0,.2);
     border-radius: 11px;
     overflow: hidden;
+    transition: all .5s;
+}
+
+.meal:hover {
+    transform: translateY(-45px);
+    box-shadow: 0 32px 24px rgba(0,0,0,.2);
 }
 
 .meal-content {
@@ -290,14 +296,186 @@
     margin-top: 32px;
 }
 
-.link:link, .link:visited {
-    color: #e67e22;
-    display: inline-block;
-    font-size: 22px;
-    text-decoration: none;
-    border-bottom: 2px solid currentColor;
+
+
+/******************/
+    /* Meals */
+/******************/
+.section-testimonials {
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+    gap: 32px;
+    background-color: #fff4e6;
 }
 
-.link:hover {
-    border: 1px solid transparent;
+.testimonial-container {
+    padding: 96px;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 96px;
+}
+
+.testimonial-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-bottom: 22px;
+}
+
+.testimonial-description {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    color: #868e96;
+}
+
+.testimonial-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 24px;
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img {
+    transition: all .4s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+/******************/
+    /* Pricing */
+/******************/
+
+.pricing-section {
+    padding: 96px 0;
+}
+
+.pricing-plan {
+    padding: 56px;
+    border-radius: 11px;
+    width: 75%;
+}
+
+.pricing-header {
+    text-align: center;
+}
+
+.pricing-category {
+    font-size: 32px;
+    font-weight: 600;
+    color: #e67e22;
+    text-transform: uppercase;
+    margin-bottom: 56px;
+}
+
+.pricing-price {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.pricing-price strong {
+    font-size: 32px;
+    font-weight: 600;
+    margin-right: 8px;
+    color: #555;
+}
+
+.pricing-text {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 56px;
+}
+
+.pricing-plan .list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 56px;
+}
+
+.pricing-plan .list .list-item {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    font-size: 22px;
+}
+
+.list-icon {
+    color: #fcc419;
+}
+
+.pricing-btn {
+    text-align: center;
+}
+
+.pricing-starter {
+    justify-self: end;
+    border: 2px solid #fff4e6;
+}
+
+.pricing-complete {
+    position: relative;
+    background-color: #fff4e6;
+    overflow: hidden;
+}
+
+.pricing-complete::after {
+    content: "best Value";
+    text-transform: uppercase;
+    position: absolute;
+    top: 6%;
+    right: -11%;
+    color: #000;
+    background-color: yellow;
+    padding: 8px 45px;
+    font-size: 18px;
+    font-weight: 700;
+    transform: rotate(45deg);
+}
+
+/******************/
+    /* Pricing */
+/******************/
+
+.feature {
+    padding: 100px 0 0;
+}
+
+.feature-text {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 32px 0 22px;
+}
+
+.feature-description {
+    font-size: 18px;
+    line-height: 1.4;
+
+}
+
+
+.f-icon {
+    font-size: 32px;
+    color: red;
+    padding: 18px;
+    border-radius: 50%;
+    background-color: blanchedalmond;
 }
