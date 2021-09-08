@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/query.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,19 +16,25 @@
 </head>
 
 <body>
-
     <header class="header">
         <div class="logo-section">
-            <img class="logo" src="img/omnifood-logo.png" alt="omnifood">
+            <a href="#">
+                <img class="logo" src="img/omnifood-logo.png" alt="omnifood">
+            </a>
         </div>
-        <nav>
+        <nav class="nav-menu">
             <ul>
                 <li><a class="nav-link" href="#">Home</a></li>
                 <li><a class="nav-link" href="#">About</a></li>
                 <li><a class="nav-link" href="#">Recipies</a></li>
                 <li><a class="nav-link" href="#">Contact</a></li>
+                <li><a class="nav-link nav-link-highlighted" href="#">Contact</a></li>
             </ul>
         </nav>
+        <div class="nav-icons">
+            <ion-icon class="nav-icon" name="menu"></ion-icon>
+            <ion-icon class="nav-icon" name="close"></ion-icon>
+        </div>
     </header>
 
     <main>
@@ -450,6 +457,76 @@
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="grid footer-grid">
+                <div class="logo-col">
+                    <a href="#">
+                        <img class="logo" src="img/omnifood-logo.png" alt="omnifood">
+                    </a>
+                    <div class="social-links">
+                        <ul>
+                            <li class="social-link">
+                                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                            </li>
+                            <li class="social-link">
+                                <ion-icon class="social-icon" name="logo-pinterest"></ion-icon>
+                            </li>
+                            <li class="social-link">
+                                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="copyright">copyright &copy; 2021 omnifood give you the real food...</p>
+                </div>
+                <div class="address-col">
+                    <p class="footer-heading">
+                        Contactn US
+                    </p>
+                    <address class="address">
+                        <p>Address: 623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+                        <p class="address-link">
+                            <a class="phone" href="tel:415-201-6370">Phone: 415-201-6370</a>
+                            <a class="email" href="emailto:hello@omnifood.com"> Email: hello@omnifood.com</a>
+                        </p>
+                    </address>
+                </div>
+                <div class="footer-links">
+                    <p class="footer-heading">Account</p>
+                    <nav class="footer-link">
+                        <ul>
+                            <li>Create account</li>
+                            <li> Sign in</li>
+                            <li>iOS app</li>
+                            <li>Android app</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-links">
+                    <p class="footer-heading">Company</p>
+                    <nav class="footer-link">
+                        <ul>
+                            <li>About Omnifood</li>
+                            <li> For Business</li>
+                            <li> Cooking partners</li>
+                            <li> Careers</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-links">
+                    <p class="footer-heading">Resources</p>
+                    <nav class="footer-link">
+                        <ul>
+                            <li>Recipe directory</li>
+                            <li>Help center</li>
+                            <li> Privacy & terms</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Script -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

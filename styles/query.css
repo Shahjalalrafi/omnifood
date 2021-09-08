@@ -1,0 +1,130 @@
+
+
+@media(max-width: 84em) {
+   .hero {
+       max-width: 120rem;
+   }
+   .heading-primary {
+       font-size: 44px;
+   }
+   .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 75em) {
+    html {
+        font-size: 54.5%;
+    }
+    .grid {
+        column-gap: 32px;
+    }
+    .hero {
+        padding: 44px;
+        gap: 3.2rem
+    }
+    .testimonials {
+        gap: 96px;
+        padding: 12px;
+    } 
+    .testimonial-container {
+        padding: 22px;
+    }
+}
+
+@media(max-width: 59em) {
+    .logos img {
+        height: 2.2rem;
+    }
+    
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 44px 100px;
+    }
+
+    .text-box {
+        text-align: center;
+    }
+
+    .img-box {
+        text-align: center;
+    }
+
+    .img-box img {
+        max-width: 60%;
+    }
+    
+    .delivered-meals {
+        justify-content: center;
+    }
+
+    .section-testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-container {
+        padding: 44px;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .cta {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-icons {
+        display: block;
+    } 
+
+    .nav-menu {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.924);
+        top: 0;
+        left: 0;
+        transform: translateX(100%);
+        transition: all .5s;
+
+        height: 100vh;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    .nav-open .nav-menu{
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+
+        transform: translateX(0);
+    }
+
+    .nav-open .nav-icon[name="menu"] {
+        display: none;
+    }
+
+    .nav-icon[name="menu"] {
+        display: block;
+    }
+
+    .nav-open .nav-icon[name="close"] {
+        display: block;
+    }
+
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 56px
+    }
+}
