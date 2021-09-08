@@ -14,6 +14,11 @@ body {
     line-height: 1;
 }
 
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 8px rgba(230, 125, 34, 0.5);
+}
+
 /******************/
     /* Reusable */
 /******************/
@@ -58,7 +63,7 @@ body {
     margin-right: 12px;
 }
 
-.btn:link, .btn:visited {
+.btn,.btn:link, .btn:visited {
     text-decoration: none;
     display: inline-block;
     color: white;
@@ -68,6 +73,9 @@ body {
     padding: 16px 32px;
     border-radius: 9px;
     transition: all .3s;
+
+    border: none;
+    cursor: pointer;
 }
 
 .btn:hover {

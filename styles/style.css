@@ -128,7 +128,13 @@
 /******************/
 
 .section-how {
+
 }
+
+.step-text-box {
+    padding: 40px;
+}
+
 
 .heading-secondary {
     margin-bottom: 96px;
@@ -202,6 +208,10 @@
 
 .meals-section {
     padding: 96px 0;
+}
+
+.meals-section .heading-secondary {
+    margin-bottom: 56px;
 }
 
 .meal {
@@ -426,6 +436,7 @@
     text-align: center;
 }
 
+
 .pricing-starter {
     justify-self: end;
     border: 2px solid #fff4e6;
@@ -435,6 +446,7 @@
     position: relative;
     background-color: #fff4e6;
     overflow: hidden;
+    box-shadow: 0 10px 12px rgba(0,0,0,.1);
 }
 
 .pricing-complete::after {
@@ -456,7 +468,14 @@
 /******************/
 
 .feature {
-    padding: 100px 0 0;
+    padding: 30px 0 0;
+}
+
+.feature-heading{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 96px 0 20px;
+    text-align: center;
 }
 
 .feature-text {
@@ -478,4 +497,102 @@
     padding: 18px;
     border-radius: 50%;
     background-color: blanchedalmond;
+}
+
+/******************/
+    /* cta */
+/******************/
+
+.section-cta {
+    padding: 0 0 96px ;
+}
+
+.cta {
+    grid-template-columns: 2fr 1fr;
+    background-image: linear-gradient( to right, #e8590c, #f09361);
+    border-radius: 11px;
+    overflow: hidden;
+    box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.2);
+
+    /* temp */
+    height: 500px;
+}
+
+.cta-text-box {
+    padding: 64px;
+    color: #3f260b;
+}
+
+.cta-image-box {
+    background-image: url('../img/eating.jpg');
+    background-size: cover;
+    background-position: center;    
+    width: 100%;
+}
+
+.heading-secondary {
+    margin-bottom: 12px;
+    color: inherit;
+    font-size: 44px;
+}
+
+.cta-text {
+    color: inherit;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 22px;
+    padding: 12px 0;
+}
+
+.cta-form *:focus {
+    outline: none;
+    box-shadow: 0 0 0 8px rgb(170, 170, 170, .5);
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 15px;
+    background-color: lavenderblush;
+    border: none;
+    border-radius: 9px;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+.cta-form .btn {
+    width: 100%;
+    background-color: white;
+    color: rgb(83, 82, 82);
+    align-self: flex-end;
+    padding: 12px;
+}
+
+
+
+
+select {
+
+}
+
+option {
+
+}
+
+.btn {
+
 }
