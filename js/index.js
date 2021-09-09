@@ -33,3 +33,25 @@ allLinks.forEach(function(link) {
         }
     })
 })
+
+
+// Navigation sticky
+
+const sectionHeroEl = document.querySelector('.hero-section')
+
+const obs = new IntersectionObserver(function(enteries) {
+    const ent = enteries[0]
+    if(!ent.intersecting) {
+        document.body.classList.add('sticky')
+    }
+
+    if(ent.intersecting) {
+        document.body.classList.remove('sticky')
+    }
+    
+}, {
+    root: null,
+    threshold: 0,
+})
+
+obs.observe(sectionHeroEl)

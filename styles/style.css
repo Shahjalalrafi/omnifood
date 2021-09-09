@@ -1,8 +1,29 @@
+/******************/
+    /* Sticky Navigation */
+/******************/
 
+.sticky .header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    
+    padding-top: 0;
+    padding-bottom: 0;
+
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.952);
+}
+
+.sticky .hero-section {
+    margin-top: 96px;
+}
 
 /******************/
     /* Navigation */
 /******************/
+
 .header {
     height: 80px;
     display: flex;
