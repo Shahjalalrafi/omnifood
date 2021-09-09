@@ -127,4 +127,146 @@
         flex-direction: column;
         gap: 56px
     }
+
+    .pricing-plan {
+        width: 100%
+    }
+}
+
+
+@media(max-width: 50em) {
+    .grid {
+        gap: 36px
+    }
+    .grid--cols-2 {
+        grid-template-columns : 1fr;
+    }
+    .grid--cols-3 {
+        grid-template-columns : 1fr 1fr;
+    }
+    .grid--cols-4 {
+        grid-template-columns : 1fr 1fr;
+    }
+
+    .step-img-box:nth-child(2) {
+        grid-row: 1;
+    }
+
+    .step-img-box:nth-child(6) {
+        grid-row: 5;
+    }
+
+    .step-img-box{
+        margin-bottom: 0px;
+    }
+
+    .section-how {
+        padding: 56px 0;
+    }
+
+    .meals-section {
+        padding: 56px 0;
+    }
+
+    .diets {
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+
+    .pricing-section-main{
+        padding: 32px 120px ;
+    }
+
+    .cta {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-image-box  {
+        height: 350px;
+        grid-row: 1;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .logo-col,
+    .address-col  {
+        grid-row: 2;
+        grid-column: span 3;
+    }
+
+    .footer-links {
+        grid-row: 1;
+        grid-column: span 2;
+    }
+}
+
+@media(max-width: 37em) {
+    .logos img {
+        height: 1.2rem;
+    }
+
+    .step-tertiary {
+        font-size: 3.2rem;
+    }
+
+    .heading-primary {
+        font-size: 3.2rem;
+    }
+
+    .heading-secondary {
+        font-size: 3.2rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .grid--cols-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-section-main{
+        padding: 32px 82px ;
+    }
+}
+
+@media(max-width: 31em) {
+    .grid--cols-4 {
+        grid-template-columns : 1fr;
+    }
+
+    .hero {
+        padding: 22px;
+    }
+
+    .step-text-box {
+        padding: 18px;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cta-text-box {
+        padding: 22px;
+    }
+
+    .pricing-section-main{
+        padding: 22px ;
+    }
+
+    .pricing-plan {
+        padding: 56px 22px;
+    }
+
+    .cta-image-box  {
+        height: 250px;
+    }
+
+    .diets .list .list-item {
+        font-size: 22px;
+    }
 }

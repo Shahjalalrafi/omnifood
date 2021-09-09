@@ -16,19 +16,19 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header ">
         <div class="logo-section">
             <a href="#">
                 <img class="logo" src="img/omnifood-logo.png" alt="omnifood">
             </a>
         </div>
         <nav class="nav-menu">
-            <ul>
-                <li><a class="nav-link" href="#">Home</a></li>
-                <li><a class="nav-link" href="#">About</a></li>
-                <li><a class="nav-link" href="#">Recipies</a></li>
-                <li><a class="nav-link" href="#">Contact</a></li>
-                <li><a class="nav-link nav-link-highlighted" href="#">Contact</a></li>
+            <ul class="main-nav-menu">
+                <li><a class="nav-link" href="#how">How It Works</a></li>
+                <li><a class="nav-link" href="#meals">Meals</a></li>
+                <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                <li><a class="nav-link nav-link-highlighted" href="#cta">Try For Free</a></li>
             </ul>
         </nav>
         <div class="nav-icons">
@@ -45,8 +45,8 @@
                     <p class="text-description">The smart 365-days-per-year food subscription that will make you eat
                         healthy
                         again. Tailored to your personal tastes and nutritional needs.</p>
-                    <a href="#" class="btn m-right">Start Eating Well</a>
-                    <a href="#" class="btn btn-outline">Learn More &darr;</a>
+                    <a href="#cta" class="btn m-right">Start Eating Well</a>
+                    <a href="#pricing" class="btn btn-outline">Learn More &darr;</a>
                     <div class="delivered-meals">
                         <div class="delivered-img">
                             <img src="img/customers/customer-1.jpg" alt="delivery food">
@@ -91,7 +91,7 @@
         </section>
 
         <!-- How it works -->
-        <section class="section-how">
+        <section class="section-how" id="how">
             <div class="container">
                 <span class="subheading">how it works</span>
                 <h3 class="heading-secondary">Your daily dose of health in 3 simple steps</h3>
@@ -150,7 +150,7 @@
         </section>
 
         <!-- Meals -->
-        <section class="meals-section">
+        <section class="meals-section" id="meals">
             <div class="container text-center">
                 <span class="subheading">Meals</span>
                 <h3 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h3>
@@ -200,7 +200,7 @@
                     </div>
                     <!-- Diets -->
                     <div class="diets">
-                        <h3 class="diets-geet">Omnifood works with any diet:</h3>
+                        <h3 class="diets-geet">works with any diet:</h3>
                         <ul class="list">
                             <li class="list-item">
                                 <ion-icon class="list-icon" name="checkmark-done-outline"></ion-icon>Vegetarian
@@ -241,7 +241,7 @@
         </section>
 
         <!-- Testimonials and gallery -->
-        <section class="section-testimonials">
+        <section class="section-testimonials" id="testimonials">
             <div class="testimonial-container">
                 <span class="subheading">Testimonials</span>
                 <h3 class="heading-secondary">Once you try it you can't go back</h3>
@@ -320,8 +320,8 @@
             </div>
         </section>
 
-        <section class="pricing-section">
-            <div class="container grid grid--cols-2 margin--bottom-md">
+        <section class="pricing-section" id="pricing">
+            <div class="container grid grid--cols-2 margin--bottom-md pricing-section-main">
                 <div class="pricing-plan pricing-starter">
                     <header class="pricing-header">
                         <p class="pricing-category">starter</p>
@@ -421,7 +421,7 @@
             </div>
         </section>
 
-        <section class="section-cta">
+        <section class="section-cta" id="cta">
             <div class="container">
                 <div class="grid cta">
                     <div class="cta-text-box">
@@ -480,6 +480,7 @@
                     </div>
                     <p class="copyright">copyright &copy; 2021 omnifood give you the real food...</p>
                 </div>
+                
                 <div class="address-col">
                     <p class="footer-heading">
                         Contactn US
@@ -492,6 +493,7 @@
                         </p>
                     </address>
                 </div>
+
                 <div class="footer-links">
                     <p class="footer-heading">Account</p>
                     <nav class="footer-link">
@@ -503,6 +505,7 @@
                         </ul>
                     </nav>
                 </div>
+
                 <div class="footer-links">
                     <p class="footer-heading">Company</p>
                     <nav class="footer-link">
@@ -514,6 +517,7 @@
                         </ul>
                     </nav>
                 </div>
+
                 <div class="footer-links">
                     <p class="footer-heading">Resources</p>
                     <nav class="footer-link">
@@ -531,6 +535,9 @@
     <!-- Script -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- file script -->
+    <script src="js/index.js"></script>
 </body>
 
 </html>
