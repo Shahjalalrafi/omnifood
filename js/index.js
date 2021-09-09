@@ -1,7 +1,7 @@
 const navIconEl = document.querySelector('.nav-icons')
 const headerEl = document.querySelector('.header')
 
-navIconEl.addEventListener('click', function() {
+navIconEl.addEventListener('click', function () {
     headerEl.classList.toggle('nav-open')
 })
 
@@ -10,25 +10,25 @@ navIconEl.addEventListener('click', function() {
 
 const allLinks = document.querySelectorAll('a:link');
 
-allLinks.forEach(function(link) {
-    link.addEventListener('click', function(e) {
+allLinks.forEach(function (link) {
+    link.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         const href = link.getAttribute('href');
-        
-        if(href === "#") {
+
+        if (href === "#") {
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
             })
         }
 
-        if(href !== '#' && href.startsWith("#")) {
+        if (href !== '#' && href.startsWith("#")) {
             const sectionEl = document.querySelector(href)
-            sectionEl.scrollIntoView({behavior: "smooth"})
+            sectionEl.scrollIntoView({ behavior: "smooth" })
         }
-        
-        if(link.classList.contains('nav-link')) {
+
+        if (link.classList.contains('nav-link')) {
             headerEl.classList.toggle('nav-open')
         }
     })
@@ -39,19 +39,20 @@ allLinks.forEach(function(link) {
 
 const sectionHeroEl = document.querySelector('.hero-section')
 
-const obs = new IntersectionObserver(function(enteries) {
+const obs = new IntersectionObserver(function (enteries) {
     const ent = enteries[0]
-    if(!ent.intersecting) {
+    console.log(ent)
+    if (!ent.isIntersecting) {
         document.body.classList.add('sticky')
     }
 
-    if(ent.intersecting) {
+    if (ent.isIntersecting) {
         document.body.classList.remove('sticky')
     }
-    
 }, {
     root: null,
     threshold: 0,
+    rootMargin: "-80px"
 })
 
 obs.observe(sectionHeroEl)
