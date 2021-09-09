@@ -16,6 +16,9 @@
     html {
         font-size: 54.5%;
     }
+    .nav-link:link, .nav-link:visited { 
+        font-size: 18px;
+    }
     .grid {
         column-gap: 32px;
     }
